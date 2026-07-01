@@ -11,6 +11,19 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+    <style>
+    /* Increase selectbox size */
+    div[data-baseweb="select"] {
+        font-size: 20px;
+    }
+    div[data-baseweb="select"] > div {
+        padding: 12px 16px;
+        min-height: 55px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 st.markdown(
     """
     <h1 style="text-align:center;">
