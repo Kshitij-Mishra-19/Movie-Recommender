@@ -1,0 +1,7 @@
+# Extra dependencies needed only to regenerate movie_dict.pkl and similarity.pkl
+# from the raw TMDB CSVs, via movie-recommender-system-model.ipynb
+-r requirements.txt
+numpy
+scikit-learn
+nltk
+jupyter
