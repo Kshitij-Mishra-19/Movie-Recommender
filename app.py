@@ -83,7 +83,7 @@ def recommend(movie):
 
 movies_dict = pickle.load(open('movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
-st.title("Select a Movie to Get Similar Recommendations
+st.title("Select a Movie to Get Similar Recommendations")
 selected_movie_name = st.selectbox('', movies['title'].values, label_visibility="collapsed")
 
 
