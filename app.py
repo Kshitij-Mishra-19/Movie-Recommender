@@ -26,7 +26,7 @@ st.markdown(
 
 
 def get_api_key():
-    # Prefer Streamlit secrets (for Streamlit Cloud), fall back to env var (for local/other hosts)
+    
     try:
         return st.secrets["OMDB_API_KEY"]
     except (KeyError, FileNotFoundError):
@@ -35,20 +35,24 @@ def get_api_key():
             st.error("OMDB_API_KEY is not set. Add it to .streamlit/secrets.toml or as an environment variable.")
             st.stop()
         return key
+        
 
+NO_POSTER_URL = "https://placehold.co/300x450?text=No+Poster"
 
 @st.cache_data
 def fetch_poster(movie_name):
     api_key = get_api_key()
-
     url = f"https://www.omdbapi.com/?t={movie_name}&apikey={api_key}"
-    response = requests.get(url)
-    data = response.json()
-
-    if data.get("Response") == "True":
-        return data["Poster"]
-    else:
-        return "https://via.placeholder.com/300x450?text=No+Poster"
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        data = response.json()
+    except requests.RequestException:
+        return NO_POSTER_URL
+    poster = data.get("Poster")
+    if data.get("Response") == "True" and poster and poster != "N/A":
+        return poster
+    return NO_POSTER_URL
 
 
 similarity = pickle.load(open('similarity.pkl', 'rb'))
