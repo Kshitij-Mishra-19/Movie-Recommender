@@ -13,13 +13,18 @@ st.set_page_config(
 
 st.markdown("""
     <style>
-    /* Increase selectbox size */
     div[data-baseweb="select"] {
         font-size: 20px;
     }
     div[data-baseweb="select"] > div {
         padding: 12px 16px;
         min-height: 55px;
+        line-height: 55px;
+    }
+    div[data-baseweb="select"] span {
+        line-height: normal;
+        display: flex;
+        align-items: center;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -65,9 +70,6 @@ def fetch_poster(movie_name):
 
 
 similarity = pickle.load(open('similarity.pkl', 'rb'))
-
-
-from concurrent.futures import ThreadPoolExecutor
 
 def recommend(movie):
     movie_index = movies[movies['title'] == movie].index[0]
