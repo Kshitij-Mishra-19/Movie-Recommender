@@ -11,24 +11,6 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown("""
-    <style>
-    div[data-baseweb="select"] {
-        font-size: 20px;
-    }
-    div[data-baseweb="select"] > div {
-        padding: 12px 16px;
-        min-height: 55px;
-        line-height: 55px;
-    }
-    div[data-baseweb="select"] span {
-        line-height: normal;
-        display: flex;
-        align-items: center;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
 st.markdown(
     """
     <h1 style="text-align:center;">
