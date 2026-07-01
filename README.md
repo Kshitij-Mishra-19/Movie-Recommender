@@ -51,4 +51,4 @@ Run all cells; this regenerates `movie_dict.pkl` and `similarity.pkl` in place f
 
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/Kshitij-Mishra-19)
 
-## ⭐ If you found this project helpful or interesting, consider giving it a star on GitHub
+## ⭐ If you found this project helpful or interesting, consider giving it a star on GitHub!
