@@ -47,8 +47,9 @@ Run all cells; this regenerates `movie_dict.pkl` and `similarity.pkl` in place f
 
 ## Author
 **Kshitij Mishra**
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](www.linkedin.com/in/kshitij-mishra-1b5962347)
 
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/Kshitij-Mishra-19)
+LinkedIn : [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](www.linkedin.com/in/kshitij-mishra-1b5962347)
+
+GitHub : [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/Kshitij-Mishra-19)
 
 ## ⭐ If you found this project helpful or interesting, consider giving it a star on GitHub!
