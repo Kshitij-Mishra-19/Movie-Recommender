@@ -15,7 +15,7 @@ st.markdown(
     """
     <h1 style="text-align:center;">
         🎬 <span style="color:#ff77b7;">Movie</span>
-        <span style="color:#a855f7;"> Recommender System</span>
+        <span style="color:#a855f7;"> Recommender</span>
     </h1>
     <h4 style="text-align:center;color:gray;">
         Find movies similar to your favorite one
@@ -83,8 +83,8 @@ def recommend(movie):
 
 movies_dict = pickle.load(open('movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
-st.title("Movie Recommender")
-selected_movie_name = st.selectbox('Select a movie to get similar recommendations', movies['title'].values)
+st.title("Select a Movie to Get Similar Recommendations
+selected_movie_name = st.selectbox('', movies['title'].values, label_visibility="collapsed")
 
 
 if st.button("Recommend"):
