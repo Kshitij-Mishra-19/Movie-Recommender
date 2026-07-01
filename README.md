@@ -37,7 +37,7 @@ jupyter notebook movie-recommender-system-model.ipynb
 Run all cells; this regenerates `movie_dict.pkl` and `similarity.pkl` in place from `tmdb_5000_movies.csv` and `tmdb_5000_credits.csv`.
 
 ## Files
-- `app.py` — Streamlit app
+- `app.py` - Streamlit app
 - `movie_dict.pkl` - movie metadata (title, genres, cast, etc.)
 - `similarity.pkl` - precomputed cosine similarity matrix (float32)
 - `movie-recommender-system-model.ipynb` - notebook that builds the model from raw data
@@ -47,10 +47,8 @@ Run all cells; this regenerates `movie_dict.pkl` and `similarity.pkl` in place f
 
 ## Author
 **Kshitij Mishra**
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/kshitij-mishra-19)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](www.linkedin.com/in/kshitij-mishra-1b5962347)
+
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/Kshitij-Mishra-19)
 
-## ⭐ Support
-If you found this project helpful or interesting, consider giving it a star on GitHub - it helps others discover it and means a lot!
-
-[![GitHub stars](https://img.shields.io/github/stars/Kshitij-Mishra-19/Movie-Recommender?style=social)](https://github.com/Kshitij-Mishra-19/Movie-Recommender)
+## ⭐ If you found this project helpful or interesting, consider giving it a star on GitHub
