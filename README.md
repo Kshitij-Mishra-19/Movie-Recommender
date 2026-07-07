@@ -1,5 +1,5 @@
 # Movie Recommender System
-A Streamlit app that recommends 5 similar movies based on content (genres, keywords, cast, crew, and overview), using a precomputed cosine-similarity matrix, and shows posters fetched from the OMDB API
+A Streamlit app that recommends 5 similar movies based on content (genres, keywords, cast, crew, and overview), using a precomputed cosine-similarity matrix, and shows posters fetched from the OMDB API.
 
 ## How it works
 1. `movie-recommender-system-model.ipynb` builds the model from the raw TMDB 5000 dataset:
